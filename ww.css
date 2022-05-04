@@ -1,0 +1,105 @@
+body{
+    background: url(fon.jpeg) fixed;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+
+}
+
+nav{
+  background: #87CEEB;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+nav a{
+    padding: 10px 20px;
+  display: inline-block;
+color: #444141
+}
+
+nav a:hover{
+  background:#4169E1;
+  color: #F5F5F5;
+}
+.im{
+  color: #F5F5F5;
+  padding: 0 35px;
+  height: 100vh;
+  padding-top: 150px;
+  font-size: 60px;
+}
+h2{
+  color: #F5F5F5;
+  padding: 0 35px;}
+p{
+    text-align: justify;
+  }
+
+.email{
+  color: #444141;
+  background-color: #9fdbf2;
+  padding: 10px 20px;
+}
+h2,h1,h3{
+  color: #444141;
+  text-align: center;
+}
+h3 {
+  color: #444141;
+}
+.h3{
+  color: #444141;
+  background-color: rgba(	224, 255, 255, 0.7);
+  text-align: justify;
+  padding: 20px;
+  margin: 30px;
+  /*font-weight: bold;*/
+}
+a{
+  text-decoration:none;
+  color:  #444141;
+}
+.char{
+  color: #444141;
+  background-color: rgba(	173, 216, 230, 0.7);
+  text-align: justify;
+  padding: 20px;
+  margin: 30px;
+  /*  font-weight: bold;*/
+}
+.link{
+  color: #000080;
+}
+.inn{
+  color: #444141;
+  background-color: rgba(	173, 216, 230, 0.7);
+  text-align: justify;
+  padding: 20px;
+  margin: 30px;
+    /*font-weight: bold;*/
+}
+.button {
+    background-color: #00BFFF;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.pic{
+  float: right;
+  margin: 7px 7px 7px 7px;
+  width: 20%;
+}

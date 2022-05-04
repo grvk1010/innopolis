@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        #q2, #q3 {
+            display: none;
+        }
+
+        #q1 div, #q2 div, #q3 div {
+            background: #91daf0;
+            padding: 15px;
+            margin: 20px;
+            width: 120px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #q1 div:hover, #q2 div:hover, #q3 div:hover{
+            background: #6fb3db;
+        }
+    </style>
+</head>
+<body>
+    <div id="q1">
+        <h2> 1. Когда основали Иннополис?</h2>
+        <div id="r1q1" onclick="clickq1('r1q1')">9 июля 2014</div>
+        <div id="r2q1" onclick="clickq1('r2q1')">12 апреля 2012</div>
+        <div id="r3q1" onclick="clickq1('r3q1')">9 июня 2012</div>
+        <div id="r4q1" onclick="clickq1('r4q1')">22 августа 2011</div>
+
+
+    </div>
+
+    <div id="q2">
+        <h2>2. Сколько жителей в Иннополисе?</h2>
+        <div id="r1q2" onclick="clickq2('r1q2')">5000</div>
+        <div id="r2q2" onclick="clickq2('r2q2')">7500</div>
+        <div id="r3q2" onclick="clickq2('r3q2')">3800</div>
+
+
+    </div>
+
+    <div id="q3">
+        <h2>3. Площадь Иннополиса?</h2>
+        <div id="r1q3" onclick="clickq3('r1q3')">2300га</div>
+        <div id="r2q3" onclick="clickq3('r2q3')">1200га</div>
+        <div id="r3q3" onclick="clickq3('r3q3')">4500га</div>
+
+
+    </div>
+
+    <h3 id="rez"></h3>
+
+    <script>
+        let count=0;
+
+        function clickq1(e){
+            if (e=="r3q1"){
+                count++;
+                document.getElementById(e).style.background="#37a360";
+            }
+            else {
+                document.getElementById(e).style.background="red";
+            }
+            setTimeout(changeq1, 1000);
+
+        }
+
+        function clickq2(e){
+            if (e=="r3q2"){
+                count++;
+                document.getElementById(e).style.background="#37a360";
+            }
+            else {
+                document.getElementById(e).style.background="red";
+            }
+            setTimeout(changeq2, 1000);
+
+        }
+
+        function clickq3(e){
+            if (e=="r2q3"){
+                count++;
+                document.getElementById(e).style.background="#37a360";
+            }
+            else {
+                document.getElementById(e).style.background="red";
+            }
+            setTimeout(changeq3, 1000);
+
+        }
+
+
+        function changeq1(){
+            q1.style.display="none";
+            q2.style.display="block";
+            q3.style.display="none";
+
+        }
+
+        function changeq2(){
+            q1.style.display="none";
+            q3.style.display="block";
+            q2.style.display="none";
+        }
+
+        function changeq3(){
+            q1.style.display="none";
+            q3.style.display="none";
+            q2.style.display="none";
+            rez.innerHTML="Правильных ответов: " +count;
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
